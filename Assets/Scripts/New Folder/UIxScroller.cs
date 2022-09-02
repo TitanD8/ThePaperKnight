@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+//This script essentially performs the same task as xScroller.cs, except for the UI rhythm element of the game.
 public class UIxScroller : MonoBehaviour
 {
     /*

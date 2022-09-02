@@ -5,16 +5,29 @@ using UnityEngine.UI;
 
 public class StaminaMetre : MonoBehaviour
 {
-    private Slider fill;
+    public Slider fill;
+    public bool isPlayer;
+    public KnightStats playerStats;
+    public KnightStats enemyStats;
+
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         fill = GetComponent<Slider>();
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<KnightStats>();
+        //enemyStats = GameObject.FindGameObjectWithTag("Enemy").GetComponent<KnightStats>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        fill.value = PlayStats.currentStamina;
+        if (isPlayer)
+        {
+            fill.value = playerStats.currentHealth;
+        }
+        else
+        {
+            //fill.value = enemyStats.currentHealth;
+        }
     }
 }
