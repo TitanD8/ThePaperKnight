@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Activator
   - Node
-  - LeadingEdge
-  - TrailingEdge
+  - MissActivator
   layers:
   - Default
   - TransparentFX
@@ -15,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Trailing Edge
-  - 
+  - Rhythm Game
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Nodes
     uniqueID: 2902299339
+    locked: 0
+  - name: UI
+    uniqueID: 3431533963
     locked: 0
